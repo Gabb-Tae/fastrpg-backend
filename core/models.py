@@ -1,5 +1,6 @@
 from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
+from media.models import Image
 
 
 class itens(models.Model):
@@ -38,8 +39,6 @@ class skills(models.Model):
     class Meta:
         verbose_name_plural = "Skills"
 
-
-
 class rpgrace(models.Model):
     name = models.CharField(max_length=50)
     features = models.CharField(max_length=700)
@@ -68,4 +67,11 @@ class character(models.Model):
     rpgrace = models.ForeignKey(
         rpgrace, on_delete=models.PROTECT, related_name="character"
     )
-
+    img = models.ForeignKey(
+        Image,
+        related_name="+",
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        default=None,
+    )

@@ -1,6 +1,10 @@
 from rest_framework.serializers import ModelSerializer
 
 from core.models import rpgclass, rpgrace, skills, itens
+from rest_framework.serializers import ModelSerializer,                    SlugRelatedField
+
+from media.models import Image
+from media.serializers import ImageSerializer
 
 class rpgclassSerializer(ModelSerializer):
     class Meta:
