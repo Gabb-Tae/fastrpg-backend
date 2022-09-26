@@ -75,3 +75,5 @@ class character(models.Model):
         blank=True,
         default=None,
     )
+    class Meta:
+        verbose_name_plural = "Characters"

@@ -10,6 +10,14 @@ python-versions = ">=3.7"
 tests = ["mypy (>=0.800)", "pytest", "pytest-asyncio"]
 
 [[package]]
+name = "azure-cognitiveservices-speech"
+version = "1.23.0"
+description = "\"Microsoft Cognitive Services Speech SDK\""
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "backports.zoneinfo"
 version = "0.2.1"
 description = "Backport of the standard library zoneinfo module"
@@ -69,9 +77,6 @@ category = "main"
 optional = false
 python-versions = ">=3.5"
 
-[package.dependencies]
-setuptools = ">=3.0"
-
 [package.extras]
 eventlet = ["eventlet (>=0.24.1)"]
 gevent = ["gevent (>=1.4.0)"]
@@ -79,7 +84,18 @@ setproctitle = ["setproctitle"]
 tornado = ["tornado (>=0.2)"]
 
 [[package]]
-name = "Pillow"
+name = "media"
+version = "0.1.6"
+description = "A Media Toolkit. Text-to-speech is currently available."
+category = "main"
+optional = false
+python-versions = ">=3.3.0"
+
+[package.dependencies]
+azure-cognitiveservices-speech = "*"
+
+[[package]]
+name = "pillow"
 version = "9.2.0"
 description = "Python Imaging Library (Fork)"
 category = "main"
@@ -107,19 +123,6 @@ optional = false
 python-versions = "*"
 
 [[package]]
-name = "setuptools"
-version = "65.4.0"
-description = "Easily download, build, install, upgrade, and uninstall Python packages"
-category = "main"
-optional = false
-python-versions = ">=3.7"
-
-[package.extras]
-docs = ["furo", "jaraco.packaging (>=9)", "jaraco.tidelift (>=1.4)", "pygments-github-lexers (==0.0.5)", "rst.linker (>=1.9)", "sphinx", "sphinx-favicon", "sphinx-hoverxref (<2)", "sphinx-inline-tabs", "sphinx-notfound-page (==0.8.3)", "sphinx-reredirects", "sphinxcontrib-towncrier"]
-testing = ["build[virtualenv]", "filelock (>=3.4.0)", "flake8 (<5)", "flake8-2020", "ini2toml[lite] (>=0.9)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "mock", "pip (>=19.1)", "pip-run (>=8.8)", "pytest (>=6)", "pytest-black (>=0.3.7)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=1.3)", "pytest-flake8", "pytest-mypy (>=0.9.1)", "pytest-perf", "pytest-xdist", "tomli-w (>=1.0.0)", "virtualenv (>=13.0.0)", "wheel"]
-testing-integration = ["build[virtualenv]", "filelock (>=3.4.0)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "pytest", "pytest-enabler", "pytest-xdist", "tomli", "virtualenv (>=13.0.0)", "wheel"]
-
-[[package]]
 name = "sqlparse"
 version = "0.4.2"
 description = "A non-validating SQL parser."
@@ -144,17 +147,39 @@ optional = false
 python-versions = ">=3.7"
 
 [package.extras]
-brotli = ["Brotli"]
+brotli = ["brotli"]
 
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "d9f6bba2cd89f3a5a054854798edacfada4ca5b92add483707b3b497e26d78ad"
+content-hash = "e562e64bd261434e5fac827d026e82345a419e794d338692463d0fb67b3f52a8"
 
 [metadata.files]
 asgiref = [
     {file = "asgiref-3.5.2-py3-none-any.whl", hash = "sha256:1d2880b792ae8757289136f1db2b7b99100ce959b2aa57fd69dab783d05afac4"},
     {file = "asgiref-3.5.2.tar.gz", hash = "sha256:4a29362a6acebe09bf1d6640db38c1dc3d9217c68e6f9f6204d72667fc19a424"},
+]
+azure-cognitiveservices-speech = [
+    {file = "azure_cognitiveservices_speech-1.23.0-cp310-cp310-macosx_10_14_x86_64.whl", hash = "sha256:15a9c246ec52fb38a0524e3fad28017f110bbe27caddb123c910835c1e1eb0d0"},
+    {file = "azure_cognitiveservices_speech-1.23.0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:5330477be28fc792eebefeade3b5aa005082f14c69ab8f968add5abf2d1a5b99"},
+    {file = "azure_cognitiveservices_speech-1.23.0-cp310-cp310-manylinux1_x86_64.whl", hash = "sha256:d6fdb903b0b457f0c7d96d37de50521a20ec556460db1a52d3fab6ec76e75a11"},
+    {file = "azure_cognitiveservices_speech-1.23.0-cp310-cp310-win32.whl", hash = "sha256:7fb7ec6f4ca3cdf474e839ed8e6a160deaa27ebd6cc9fa0d34e60d4e06bd6435"},
+    {file = "azure_cognitiveservices_speech-1.23.0-cp310-cp310-win_amd64.whl", hash = "sha256:9d1d079cb2dc527f7c45e22e8e1224d26e16db5dca67d9c4d863f0c504a76ba8"},
+    {file = "azure_cognitiveservices_speech-1.23.0-cp37-cp37m-macosx_10_14_x86_64.whl", hash = "sha256:ba3ede145a14749efdc0f5ed15375fc7a791cfc41d504b91da93dba20831ec39"},
+    {file = "azure_cognitiveservices_speech-1.23.0-cp37-cp37m-macosx_11_0_arm64.whl", hash = "sha256:5870c5c59f31ee4ba73718f5971b80921a43f35a34aa505d3b478d8b45395198"},
+    {file = "azure_cognitiveservices_speech-1.23.0-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:d955826267c3ae6e53e4bf28ea0b3d55749b3ec92f12321d84e194660d0b25d4"},
+    {file = "azure_cognitiveservices_speech-1.23.0-cp37-cp37m-win32.whl", hash = "sha256:42d6610e12bb3f0bdc0aa946bc90ad20312962d6e37b72204a71662f77711606"},
+    {file = "azure_cognitiveservices_speech-1.23.0-cp37-cp37m-win_amd64.whl", hash = "sha256:83365e2851924eecb9ce466a6b438bd1fa546bd63ae655e6038dbc03544b7482"},
+    {file = "azure_cognitiveservices_speech-1.23.0-cp38-cp38-macosx_10_14_x86_64.whl", hash = "sha256:17f9d48040cb7b1f16b006075551d31f9510234664ffcce8f6cf6b33b556c3a0"},
+    {file = "azure_cognitiveservices_speech-1.23.0-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:863fe9e427ca1bcb6906f91782e23914e65c27fad08283b077100f265fd9feb7"},
+    {file = "azure_cognitiveservices_speech-1.23.0-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:153bdbe8898082bd2b7557005d6b3ceccf837575e06f118fd0f80879b1deedd2"},
+    {file = "azure_cognitiveservices_speech-1.23.0-cp38-cp38-win32.whl", hash = "sha256:8528ac05a7860d10909fc3291bdbeaa5f8a8610ad3e4b20dfce482471f7e7773"},
+    {file = "azure_cognitiveservices_speech-1.23.0-cp38-cp38-win_amd64.whl", hash = "sha256:47ee3e97262054cd13c3e5fd3f8f9940447d3591797164fff1468b5f4126f347"},
+    {file = "azure_cognitiveservices_speech-1.23.0-cp39-cp39-macosx_10_14_x86_64.whl", hash = "sha256:344a3634d5ce1af88f40da78f33a5266ff8d7c378f117d0ddc0b9540e9292910"},
+    {file = "azure_cognitiveservices_speech-1.23.0-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:b3bb299d2df709f0787f5e869be5ead26b3784377ced738f782e63247e5dceb7"},
+    {file = "azure_cognitiveservices_speech-1.23.0-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:b69158cb599a6662b0638a4f19a3257a1dafeba83a448e72a4b63d3e0bc0b8b0"},
+    {file = "azure_cognitiveservices_speech-1.23.0-cp39-cp39-win32.whl", hash = "sha256:5f8168b6c827fe64209ff05d36ad56997ac0172a1773f5e72a58b82de74d9716"},
+    {file = "azure_cognitiveservices_speech-1.23.0-cp39-cp39-win_amd64.whl", hash = "sha256:f2cdbd9afd635bd4e99576c0a7d7c82dc9837b3ee4ce4990c2b7a56f5669db44"},
 ]
 "backports.zoneinfo" = [
     {file = "backports.zoneinfo-0.2.1-cp36-cp36m-macosx_10_14_x86_64.whl", hash = "sha256:da6013fd84a690242c310d77ddb8441a559e9cb3d3d59ebac9aca1a57b2e18bc"},
@@ -190,7 +215,11 @@ gunicorn = [
     {file = "gunicorn-20.1.0-py3-none-any.whl", hash = "sha256:9dcc4547dbb1cb284accfb15ab5667a0e5d1881cc443e0677b4882a4067a807e"},
     {file = "gunicorn-20.1.0.tar.gz", hash = "sha256:e0a968b5ba15f8a328fdfd7ab1fcb5af4470c28aaf7e55df02a99bc13138e6e8"},
 ]
-Pillow = [
+media = [
+    {file = "media-0.1.6-py3-none-any.whl", hash = "sha256:934321a39c2d8d4d0a89a11af4a0b1a7cc67b41e9d65a0546ef248ba25fd110e"},
+    {file = "media-0.1.6.tar.gz", hash = "sha256:92453789ade4943c74819ea2ec617f00e71164708884a7129096dc0ec691c061"},
+]
+pillow = [
     {file = "Pillow-9.2.0-cp310-cp310-macosx_10_10_x86_64.whl", hash = "sha256:a9c9bc489f8ab30906d7a85afac4b4944a572a7432e00698a7239f44a44e6efb"},
     {file = "Pillow-9.2.0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:510cef4a3f401c246cfd8227b300828715dd055463cdca6176c2e4036df8bd4f"},
     {file = "Pillow-9.2.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:7888310f6214f19ab2b6df90f3f06afa3df7ef7355fc025e78a3044737fab1f5"},
@@ -257,10 +286,6 @@ python-magic = [
 pytz = [
     {file = "pytz-2022.2.1-py2.py3-none-any.whl", hash = "sha256:220f481bdafa09c3955dfbdddb7b57780e9a94f5127e35456a48589b9e0c0197"},
     {file = "pytz-2022.2.1.tar.gz", hash = "sha256:cea221417204f2d1a2aa03ddae3e867921971d0d76f14d87abb4414415bbdcf5"},
-]
-setuptools = [
-    {file = "setuptools-65.4.0-py3-none-any.whl", hash = "sha256:c2d2709550f15aab6c9110196ea312f468f41cd546bceb24127a1be6fdcaeeb1"},
-    {file = "setuptools-65.4.0.tar.gz", hash = "sha256:a8f6e213b4b0661f590ccf40de95d28a177cd747d098624ad3f69c40287297e9"},
 ]
 sqlparse = [
     {file = "sqlparse-0.4.2-py3-none-any.whl", hash = "sha256:48719e356bb8b42991bdbb1e8b83223757b93789c00910a616a071910ca4a64d"},
