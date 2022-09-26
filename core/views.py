@@ -1,7 +1,7 @@
 from rest_framework.viewsets import ModelViewSet
 
-from core.models import rpgclass, rpgrace, skills, itens, itensclass
-from core.serializers import rpgclassSerializer, rpgraceSerializer, skillsSerializer, itensSerializer, itensclassSerializer
+from core.models import rpgclass, rpgrace, skills, itens
+from core.serializers import rpgclassSerializer, rpgraceSerializer, skillsSerializer, itensSerializer
 
 class rpgraceViewSet(ModelViewSet):
     queryset = rpgrace.objects.all()
@@ -18,7 +18,3 @@ class skillsViewSet(ModelViewSet):
 class itensViewSet(ModelViewSet):
     queryset = itens.objects.all()
     serializer_class = itensSerializer
-
-class itensclassViewSet(ModelViewSet):
-    queryset = itensclass.objects.all()
-    serializer_class = itensclassSerializer

@@ -18,13 +18,12 @@ from django.urls import include, path
 
 from rest_framework.routers import DefaultRouter
 
-from core.views import rpgclassViewSet, rpgraceViewSet, itensViewSet, skillsViewSet, itensclassViewSet
+from core.views import rpgclassViewSet, rpgraceViewSet, itensViewSet, skillsViewSet
 
 router = DefaultRouter()
 router.register(r'class', rpgclassViewSet)
 router.register(r'race', rpgraceViewSet)
 router.register(r'itens', itensViewSet)
-router.register(r'itensclass', itensclassViewSet)
 router.register(r'skills', skillsViewSet)
 
 urlpatterns = [

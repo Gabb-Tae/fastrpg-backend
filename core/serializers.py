@@ -1,6 +1,6 @@
 from rest_framework.serializers import ModelSerializer
 
-from core.models import rpgclass, rpgrace, skills, itens, itensclass
+from core.models import rpgclass, rpgrace, skills, itens
 
 class rpgclassSerializer(ModelSerializer):
     class Meta:
@@ -21,11 +21,5 @@ class itensSerializer(ModelSerializer):
     class Meta:
         model = itens
         fields = "__all__"
-
-class itensclassSerializer(ModelSerializer):
-    class Meta:
-        model = itensclass
-        fields = "__all__"
-
 
 

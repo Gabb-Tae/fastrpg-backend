@@ -1,6 +1,15 @@
 from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
 
+
+class itens(models.Model):
+    name = models.CharField(max_length=100)
+    definition = models.CharField(max_length=300)
+    def __str__(self):
+        return self.name
+    class Meta:
+        verbose_name_plural = "Itens"
+        
 class rpgclass(models.Model):
     name = models.CharField(max_length=50)
     description = models.CharField(max_length=700)
@@ -12,7 +21,7 @@ class rpgclass(models.Model):
     intelligence = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(30)])
     wisdom = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(30)])
     charism = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(30)])
-    
+    itens = models.ManyToManyField(itens, related_name="rpgclass")
     def __str__(self):
         return self.name
 
@@ -25,29 +34,11 @@ class skills(models.Model):
         rpgclass, on_delete=models.PROTECT, related_name="skills"
     )
     def __str__(self):
-        return self.description
+        return (self.rpgclass.name + " - " + self.description)
     class Meta:
         verbose_name_plural = "Skills"
 
 
-class itens(models.Model):
-    name = models.CharField(max_length=100)
-    definition = models.CharField(max_length=300)
-    def __str__(self):
-        return self.name
-    class Meta:
-        verbose_name_plural = "Itens"
-
-
-class itensclass(models.Model):
-    rpgclass = models.ForeignKey(
-    rpgclass, on_delete=models.PROTECT, related_name="itensclass"
-    )
-    itens = models.ForeignKey(
-    itens, on_delete=models.PROTECT, related_name="itensclass"
-    )
-    class Meta:
-        verbose_name_plural = "Itens-Classe"
 
 class rpgrace(models.Model):
     name = models.CharField(max_length=50)
@@ -67,4 +58,14 @@ class rpgrace(models.Model):
 
     class Meta:
         verbose_name_plural = "Races"
+
+class character(models.Model):
+    name = models.CharField(max_length=100)
+    level = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(20)])
+    rpgclass = models.ForeignKey(
+        rpgclass, on_delete=models.PROTECT, related_name="character"
+    )
+    rpgrace = models.ForeignKey(
+        rpgrace, on_delete=models.PROTECT, related_name="character"
+    )
 
