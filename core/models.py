@@ -75,5 +75,8 @@ class character(models.Model):
         blank=True,
         default=None,
     )
+    def __str__(self):
+        return ("Personagem de: " + self.name + " Feito por: ")
+
     class Meta:
         verbose_name_plural = "Characters"

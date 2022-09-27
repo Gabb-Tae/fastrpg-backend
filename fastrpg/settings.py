@@ -37,9 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "media",
-    "rest_framework",
-    "corsheaders",
+    'media',
+    'rest_framework',
+    'corsheaders',
+    'rest_framework_simplejwt',
     'core',
 ]
 
@@ -57,6 +58,12 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'fastrpg.urls'
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+        )
+}
 
 TEMPLATES = [
     {
