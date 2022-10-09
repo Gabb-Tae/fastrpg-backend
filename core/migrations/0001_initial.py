@@ -9,10 +9,6 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-        ("media", "0001_initial"),
-    ]
-
     operations = [
         migrations.CreateModel(
             name="itens",
