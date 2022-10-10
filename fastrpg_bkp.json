@@ -1,0 +1,992 @@
+[
+{
+  "model": "core.rpgrace",
+  "pk": 1,
+  "fields": {
+    "name": "Anão da Colina",
+    "features": "Visão no Escuro, Resiliência Anã, Especialização em Rochas, Tenacidade Anã.",
+    "size": "Médio",
+    "speed": "7,5m",
+    "languages": "Comum, Anão",
+    "strength": 0,
+    "dexterity": 0,
+    "constitution": 2,
+    "intelligence": 0,
+    "wisdom": 1,
+    "charism": 0
+  }
+},
+{
+  "model": "core.rpgrace",
+  "pk": 2,
+  "fields": {
+    "name": "Anão da Montanha",
+    "features": "Visão no Escuro, Resiliência Anã, Especialização em Rochas,  Treinamento Anão com Armaduras.",
+    "size": "Médio",
+    "speed": "7,5m",
+    "languages": "Comum, Anão",
+    "strength": 2,
+    "dexterity": 0,
+    "constitution": 2,
+    "intelligence": 0,
+    "wisdom": 0,
+    "charism": 0
+  }
+},
+{
+  "model": "core.rpgrace",
+  "pk": 3,
+  "fields": {
+    "name": "Elfo Alto",
+    "features": "Visão no Escuro, Sentidos Aguçados, Transe, Treinamento Élfico com Armas.",
+    "size": "Médio",
+    "speed": "9m",
+    "languages": "Comum, Élfico",
+    "strength": 0,
+    "dexterity": 2,
+    "constitution": 0,
+    "intelligence": 1,
+    "wisdom": 0,
+    "charism": 0
+  }
+},
+{
+  "model": "core.rpgrace",
+  "pk": 4,
+  "fields": {
+    "name": "Elfo da Floresta",
+    "features": "Visão no Escuro, Sentidos Aguçados, Transe, Treinamento Élfico com Armas, Máscara da Natureza, Pés Ligeiros.",
+    "size": "Médio",
+    "speed": "10,5m",
+    "languages": "Comum, Élfico",
+    "strength": 0,
+    "dexterity": 2,
+    "constitution": 0,
+    "intelligence": 0,
+    "wisdom": 1,
+    "charism": 0
+  }
+},
+{
+  "model": "core.rpgrace",
+  "pk": 5,
+  "fields": {
+    "name": "Elfo Drow",
+    "features": "Visão no Escuro Superior, Sentidos Aguçados, Transe, Sensibilidade à Luz Solar, Magia Drow, Treinamento Drow com Armas.",
+    "size": "Médio",
+    "speed": "9m",
+    "languages": "Comum, Élfico",
+    "strength": 0,
+    "dexterity": 2,
+    "constitution": 0,
+    "intelligence": 0,
+    "wisdom": 0,
+    "charism": 1
+  }
+},
+{
+  "model": "core.rpgrace",
+  "pk": 6,
+  "fields": {
+    "name": "Halfling Pés Leves",
+    "features": "Sortudo, Bravura, Agilidade Halfling, Furtividade Natural.",
+    "size": "Pequeno",
+    "speed": "7,5m",
+    "languages": "Comum, Halfling",
+    "strength": 0,
+    "dexterity": 2,
+    "constitution": 0,
+    "intelligence": 0,
+    "wisdom": 0,
+    "charism": 1
+  }
+},
+{
+  "model": "core.rpgrace",
+  "pk": 7,
+  "fields": {
+    "name": "Halfling Robusto",
+    "features": "Sortudo, Bravura, Agilidade Halfling, Resiliência dos Robustos.",
+    "size": "Pequeno",
+    "speed": "7,5m",
+    "languages": "Comum, Halfling",
+    "strength": 0,
+    "dexterity": 2,
+    "constitution": 1,
+    "intelligence": 0,
+    "wisdom": 0,
+    "charism": 0
+  }
+},
+{
+  "model": "core.rpgrace",
+  "pk": 8,
+  "fields": {
+    "name": "Humano",
+    "features": "Versátil",
+    "size": "Médio",
+    "speed": "9m",
+    "languages": "Comum",
+    "strength": 1,
+    "dexterity": 1,
+    "constitution": 1,
+    "intelligence": 1,
+    "wisdom": 1,
+    "charism": 1
+  }
+},
+{
+  "model": "core.rpgrace",
+  "pk": 9,
+  "fields": {
+    "name": "Draconato",
+    "features": "Ancestral Dracônico, Arma de Sopro, Resistência a Dano.",
+    "size": "Médio",
+    "speed": "9m",
+    "languages": "Comum, Dracônico.",
+    "strength": 2,
+    "dexterity": 0,
+    "constitution": 0,
+    "intelligence": 0,
+    "wisdom": 0,
+    "charism": 1
+  }
+},
+{
+  "model": "core.rpgrace",
+  "pk": 10,
+  "fields": {
+    "name": "Gnomo da Floresta",
+    "features": "Visão no Escuro, Esperteza Gnômica, Ilusionista Nato, Falar com Bestas Pequenas.",
+    "size": "Pequeno",
+    "speed": "7,5m",
+    "languages": "Comum, Gnômico.",
+    "strength": 0,
+    "dexterity": 1,
+    "constitution": 0,
+    "intelligence": 2,
+    "wisdom": 0,
+    "charism": 0
+  }
+},
+{
+  "model": "core.rpgrace",
+  "pk": 11,
+  "fields": {
+    "name": "Gnomo das Rochas",
+    "features": "Visão no Escuro, Esperteza Gnômica, Conhecimento de Artífice,  Engenhoqueiro.",
+    "size": "Pequeno",
+    "speed": "7,5m",
+    "languages": "Comum, Gnômico.",
+    "strength": 0,
+    "dexterity": 0,
+    "constitution": 1,
+    "intelligence": 2,
+    "wisdom": 0,
+    "charism": 0
+  }
+},
+{
+  "model": "core.rpgrace",
+  "pk": 12,
+  "fields": {
+    "name": "Meio-Elfo",
+    "features": "Visão no Escuro, Ancestral Feérico, Versatilidade em Perícia.",
+    "size": "Médio",
+    "speed": "9m",
+    "languages": "Comum, Élfico, Extra.",
+    "strength": 0,
+    "dexterity": 0,
+    "constitution": 0,
+    "intelligence": 1,
+    "wisdom": 1,
+    "charism": 2
+  }
+},
+{
+  "model": "core.rpgrace",
+  "pk": 13,
+  "fields": {
+    "name": "Meio-Orc",
+    "features": "Visão no Escuro, Ameaçador, Resistência Implacável, Ataques Selvagens.",
+    "size": "Médio",
+    "speed": "9m",
+    "languages": "Comum, Orc.",
+    "strength": 2,
+    "dexterity": 0,
+    "constitution": 1,
+    "intelligence": 0,
+    "wisdom": 0,
+    "charism": 0
+  }
+},
+{
+  "model": "core.rpgrace",
+  "pk": 14,
+  "fields": {
+    "name": "Tiefling",
+    "features": "Visão no Escuro, Resistência Infernal, Legado Infernal.",
+    "size": "Médio",
+    "speed": "9m",
+    "languages": "Comum, Infernal.",
+    "strength": 0,
+    "dexterity": 0,
+    "constitution": 0,
+    "intelligence": 1,
+    "wisdom": 0,
+    "charism": 2
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 1,
+  "fields": {
+    "name": "Adaga",
+    "definition": "1d4 Perfurante"
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 2,
+  "fields": {
+    "name": "Machado Grande",
+    "definition": "1d12 Cortante"
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 3,
+  "fields": {
+    "name": "Machadinha",
+    "definition": "1d6 Cortante"
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 4,
+  "fields": {
+    "name": "Pacote de Aventureiro",
+    "definition": "Inclui uma mochila, um pé de cabra, um martelo, 10 pítons, 10 tochas, uma caixa de fogo, 10 dias de rações e um cantil. O kit também tem 15 metros de corda de cânhamo amarrada ao lado dele."
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 5,
+  "fields": {
+    "name": "Azagaia",
+    "definition": "1d6 Perfurante"
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 6,
+  "fields": {
+    "name": "Rapieira",
+    "definition": "1d8 Perfurante"
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 7,
+  "fields": {
+    "name": "Pacote de Artista",
+    "definition": "Inclui uma mochila, um saco de dormir, duas fantasias, 5 velas, 5 dias de rações, um cantil e um kit de disfarce."
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 8,
+  "fields": {
+    "name": "Pacote do Assaltante",
+    "definition": "nclui uma mochila, um saco com 1.000 esferas de metal, 3 metros de linha, um sino, 5 velas, um pé de cabra, um martelo, 10 pítons, uma lanterna coberta, 2 frascos de óleo, 5 dias de rações, uma caixa de fogo e um cantil. O kit também possui 15 metros de corda de cânhamo amarrada ao lado dele."
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 9,
+  "fields": {
+    "name": "Alaúde",
+    "definition": "Instrumento Musical"
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 10,
+  "fields": {
+    "name": "Besta Leve",
+    "definition": "1d6 Perfurante"
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 11,
+  "fields": {
+    "name": "Foco Arcano",
+    "definition": "o. Um foco arcano é um item especial – um orbe, um cristal, um bastão, um cajado especialmente construído, uma varinha de madeira, ou algum item semelhante – projetado para canalizar o poder de magias arcanas. Um feiticeiro, bruxo ou mago podem usá-lo como um foco de conjuração."
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 12,
+  "fields": {
+    "name": "Pacote do Explorador",
+    "definition": "Inclui uma mochila, um saco de dormir, um kit de refeição, uma caixa de fogo, 10 tochas, 10 dias de rações e um cantil. O kit também tem 15 metros de corda de cânhamo amarrada ao lado dele."
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 13,
+  "fields": {
+    "name": "Maça",
+    "definition": "1d6 Concussão"
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 14,
+  "fields": {
+    "name": "Pacote de Sacerdote",
+    "definition": "Inclui uma mochila, um cobertor, 10 velas, uma caixa de fogo, uma caixa de esmolas, 2 blocos de incenso, um incensário, vestes, 2 dias de rações e um cantil."
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 15,
+  "fields": {
+    "name": "Escudo",
+    "definition": "Um escudo é feito de madeira ou metal e é usado com uma mão. Empunhar um escudo aumenta sua Classe de Armadura em 2. Você só pode se beneficiar de um escudo por vez."
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 16,
+  "fields": {
+    "name": "Símbolo Sagrado",
+    "definition": "Um símbolo sagrado é a representação de uma divindade ou um panteão. Pode ser um amuleto com o símbolo de uma divindade, um símbolo talhado cuidadosamente ou encrustado como um emblema em um escudo ou até mesmo uma caixa pequena que guarda um fragmento de uma relíquia sagrada."
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 17,
+  "fields": {
+    "name": "Cimitarra",
+    "definition": "1d6 Cortante"
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 18,
+  "fields": {
+    "name": "Foco Druídico",
+    "definition": "Um foco druídico pode ser um ramo de visco ou azevinho, uma varinha ou cetro de teixo ou de outra madeira especial, um cajado esculpido de uma árvore viva, ou um totem adornado com penas, peles, ossos e dentes de animais sagrados."
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 19,
+  "fields": {
+    "name": "Bolsa de Componentes",
+    "definition": "Trata-se de uma pequena bolsa de couro à prova d'água que pode ser fixada em um cinto. Ela possui compartimentos para armazenar todos os componentes materiais e outros itens especiais que você precisa para lançar suas magias, exceto os componentes que possuem um custo específico."
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 20,
+  "fields": {
+    "name": "Arco Longo",
+    "definition": "1d8 Perfurante"
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 21,
+  "fields": {
+    "name": "Espada Grande",
+    "definition": "2d6 Cortante"
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 22,
+  "fields": {
+    "name": "Espada Curta",
+    "definition": "1d6 Perfurante"
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 23,
+  "fields": {
+    "name": "Ferramentas de Ladrão",
+    "definition": "Esse conjunto de ferramentas inclui uma pequena pasta, um conjunto de chaves mestras, um pequeno espelho montado em uma alça de metal, um conjunto de tesouras de lâminas estreitas e um par de alicates."
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 24,
+  "fields": {
+    "name": "Bordão",
+    "definition": "1d6 Concussão"
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 25,
+  "fields": {
+    "name": "Grimório",
+    "definition": "Essencial para os magos, um grimório é um volume encadernado em couro com 100 páginas de pergaminhos em branco, adequado para armazenar magias."
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 26,
+  "fields": {
+    "name": "Pacote de Estudioso",
+    "definition": "Inclui uma mochila, um livro de  estudo, um vidro de tinta, uma caneta tinteiro, 10 folhas de  pergaminho, um saquinho de areia e uma pequena faca."
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 27,
+  "fields": {
+    "name": "Dardos",
+    "definition": "1d4 Perfurante"
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 28,
+  "fields": {
+    "name": "Maça Estrela",
+    "definition": "1d8 Perfurante"
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 29,
+  "fields": {
+    "name": "Aljava",
+    "definition": "Uma aljava pode guardar até 20 flechas."
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 30,
+  "fields": {
+    "name": "Armadura de Couro",
+    "definition": "O peitoral e as ombreiras da armadura de  couro são feitos de couro que foi endurecido após ser  fervido em óleo. O resto da armadura é feita de materiais  mais macios e mais flexíveis. CA = 11 + modificador de Des"
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 31,
+  "fields": {
+    "name": "Armadura Brunea",
+    "definition": "Essa armadura consiste em um casaco e calças (e talvez uma saia separada) de couro coberto com  peças sobrepostas de metal, assim como as escamas de peixe. O conjunto inclui manoplas. CA = 14 + modificador de Des (máx. +2)"
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 32,
+  "fields": {
+    "name": "Armadura Cota de Malha",
+    "definition": "Feita de anéis de metal entrelaçados,  a cota de malha inclui uma camada de tecido acolchoado  usada por baixo da malha de metal para evitar atrito e  amortecer o impacto dos golpes. O conjunto inclui  manoplas. CA = 16"
+  }
+},
+{
+  "model": "core.itens",
+  "pk": 33,
+  "fields": {
+    "name": "Armadura Gibão de Peles",
+    "definition": "Um gibão de peles é um armadura  bruta consistindo de peles grossas. É comumente usada  por tribos bárbaras, humanoides malignos e outros povos  que não têm acesso às ferramentas e materiais  necessários para criar uma armadura melhor. CA = 12 + modificador de Des (máx. +2)"
+  }
+},
+{
+  "model": "core.rpgclass",
+  "pk": 1,
+  "fields": {
+    "name": "Bárbaro",
+    "description": "Um feroz guerreiro de origem primitiva que pode entrar em fúria durante uma batalha.",
+    "life": 12,
+    "main_skill": "Força",
+    "strength": 15,
+    "dexterity": 13,
+    "constitution": 14,
+    "intelligence": 8,
+    "wisdom": 10,
+    "charism": 12,
+    "itens": [
+      2,
+      3,
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "core.rpgclass",
+  "pk": 2,
+  "fields": {
+    "name": "Bardo",
+    "description": "Um místico inspirador que possui poderes que ecoam a música da criação.",
+    "life": 8,
+    "main_skill": "Carisma",
+    "strength": 8,
+    "dexterity": 12,
+    "constitution": 10,
+    "intelligence": 13,
+    "wisdom": 14,
+    "charism": 15,
+    "itens": [
+      1,
+      6,
+      7,
+      9,
+      30
+    ]
+  }
+},
+{
+  "model": "core.rpgclass",
+  "pk": 3,
+  "fields": {
+    "name": "Bruxo",
+    "description": "Um portador de magia derivada de barganha com uma entidade planar",
+    "life": 8,
+    "main_skill": "Carisma",
+    "strength": 8,
+    "dexterity": 12,
+    "constitution": 10,
+    "intelligence": 13,
+    "wisdom": 14,
+    "charism": 15,
+    "itens": [
+      1,
+      5,
+      10,
+      19,
+      29,
+      30
+    ]
+  }
+},
+{
+  "model": "core.rpgclass",
+  "pk": 4,
+  "fields": {
+    "name": "Clérigo",
+    "description": "Um campeão sacerdotal que empunha magia divina a serviço de um poder maior.",
+    "life": 8,
+    "main_skill": "Sabedoria",
+    "strength": 13,
+    "dexterity": 10,
+    "constitution": 14,
+    "intelligence": 8,
+    "wisdom": 15,
+    "charism": 12,
+    "itens": [
+      4,
+      13,
+      15,
+      16,
+      29,
+      31
+    ]
+  }
+},
+{
+  "model": "core.rpgclass",
+  "pk": 5,
+  "fields": {
+    "name": "Druida",
+    "description": "Um sacerdote da Crença Antiga, detentor dos poderes da natureza – luz da lua e crescimento das plantas, fogo e relâmpagos – e capaz de adotar formas animais.",
+    "life": 8,
+    "main_skill": "Sabedoria",
+    "strength": 10,
+    "dexterity": 8,
+    "constitution": 14,
+    "intelligence": 12,
+    "wisdom": 15,
+    "charism": 13,
+    "itens": [
+      4,
+      15,
+      17,
+      18,
+      26,
+      30
+    ]
+  }
+},
+{
+  "model": "core.rpgclass",
+  "pk": 6,
+  "fields": {
+    "name": "Feiticeiro",
+    "description": "Um conjurador que possui magia latente advinda de um dom ou linhagem.",
+    "life": 6,
+    "main_skill": "Carisma",
+    "strength": 8,
+    "dexterity": 10,
+    "constitution": 14,
+    "intelligence": 13,
+    "wisdom": 13,
+    "charism": 15,
+    "itens": [
+      4,
+      10,
+      11
+    ]
+  }
+},
+{
+  "model": "core.rpgclass",
+  "pk": 7,
+  "fields": {
+    "name": "Guerreiro",
+    "description": "Um mestre do combate, perito em uma vasta gama de armas e armaduras.",
+    "life": 10,
+    "main_skill": "Força",
+    "strength": 15,
+    "dexterity": 13,
+    "constitution": 14,
+    "intelligence": 12,
+    "wisdom": 8,
+    "charism": 10,
+    "itens": [
+      3,
+      12,
+      20,
+      21,
+      22,
+      29,
+      33
+    ]
+  }
+},
+{
+  "model": "core.rpgclass",
+  "pk": 8,
+  "fields": {
+    "name": "Ladino",
+    "description": "Um trapaceiro que utiliza de furtividade e astúcia para sobrepujar os obstáculos e inimigos.",
+    "life": 8,
+    "main_skill": "Destreza",
+    "strength": 10,
+    "dexterity": 15,
+    "constitution": 12,
+    "intelligence": 14,
+    "wisdom": 13,
+    "charism": 8,
+    "itens": [
+      1,
+      6,
+      8,
+      22,
+      23,
+      30
+    ]
+  }
+},
+{
+  "model": "core.rpgclass",
+  "pk": 9,
+  "fields": {
+    "name": "Mago",
+    "description": "Um usuário de magia escolado, capaz de manipular as estruturas da realidade.",
+    "life": 6,
+    "main_skill": "Inteligência",
+    "strength": 10,
+    "dexterity": 12,
+    "constitution": 8,
+    "intelligence": 15,
+    "wisdom": 14,
+    "charism": 13,
+    "itens": [
+      19,
+      24,
+      25,
+      26
+    ]
+  }
+},
+{
+  "model": "core.rpgclass",
+  "pk": 10,
+  "fields": {
+    "name": "Monge",
+    "description": "Um mestre das artes marciais, utilizando o poder corporal para atingir a perfeição física e espiritual.",
+    "life": 8,
+    "main_skill": "Força",
+    "strength": 15,
+    "dexterity": 14,
+    "constitution": 13,
+    "intelligence": 8,
+    "wisdom": 12,
+    "charism": 10,
+    "itens": [
+      12,
+      22,
+      27
+    ]
+  }
+},
+{
+  "model": "core.rpgclass",
+  "pk": 11,
+  "fields": {
+    "name": "Paladino",
+    "description": "Um guerreiro divino vinculado a um juramento sagrado.",
+    "life": 10,
+    "main_skill": "Sabedoria",
+    "strength": 12,
+    "dexterity": 8,
+    "constitution": 13,
+    "intelligence": 10,
+    "wisdom": 15,
+    "charism": 14,
+    "itens": [
+      5,
+      14,
+      15,
+      16,
+      28,
+      32
+    ]
+  }
+},
+{
+  "model": "core.rpgclass",
+  "pk": 12,
+  "fields": {
+    "name": "Patrulheiro",
+    "description": "Um guerreiro que utiliza de poderio marcial e magia natural para combater ameaças nos limites da civilização.",
+    "life": 10,
+    "main_skill": "Força",
+    "strength": 15,
+    "dexterity": 14,
+    "constitution": 12,
+    "intelligence": 8,
+    "wisdom": 13,
+    "charism": 10,
+    "itens": [
+      12,
+      20,
+      22,
+      29,
+      30
+    ]
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 1,
+  "fields": {
+    "description": "Inimigo Favorito",
+    "rpgclass": 12
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 2,
+  "fields": {
+    "description": "Explorador Natural",
+    "rpgclass": 12
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 3,
+  "fields": {
+    "description": "Sentido Divino",
+    "rpgclass": 11
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 4,
+  "fields": {
+    "description": "Cura pelas Mãos",
+    "rpgclass": 11
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 5,
+  "fields": {
+    "description": "Artes Marciais",
+    "rpgclass": 10
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 6,
+  "fields": {
+    "description": "Defesa sem Armadura",
+    "rpgclass": 10
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 7,
+  "fields": {
+    "description": "Recuperação Arcana",
+    "rpgclass": 9
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 8,
+  "fields": {
+    "description": "Conjuração",
+    "rpgclass": 9
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 9,
+  "fields": {
+    "description": "Especialização",
+    "rpgclass": 8
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 10,
+  "fields": {
+    "description": "Ataque Furtivo",
+    "rpgclass": 8
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 11,
+  "fields": {
+    "description": "Gíria de Ladrão",
+    "rpgclass": 8
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 12,
+  "fields": {
+    "description": "Retomar o Fôlego",
+    "rpgclass": 7
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 13,
+  "fields": {
+    "description": "Estilo de Luta",
+    "rpgclass": 7
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 14,
+  "fields": {
+    "description": "Origem de Feitiçaria",
+    "rpgclass": 6
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 15,
+  "fields": {
+    "description": "Conjuração",
+    "rpgclass": 6
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 16,
+  "fields": {
+    "description": "Conjuração",
+    "rpgclass": 5
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 17,
+  "fields": {
+    "description": "Druídico",
+    "rpgclass": 5
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 18,
+  "fields": {
+    "description": "Domínio Divino",
+    "rpgclass": 4
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 19,
+  "fields": {
+    "description": "Conjuração",
+    "rpgclass": 4
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 20,
+  "fields": {
+    "description": "Magia de Pacto",
+    "rpgclass": 3
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 21,
+  "fields": {
+    "description": "Patrono Transcendental",
+    "rpgclass": 3
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 22,
+  "fields": {
+    "description": "Inspiração de Bardo (d6)",
+    "rpgclass": 2
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 23,
+  "fields": {
+    "description": "Conjuração",
+    "rpgclass": 2
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 24,
+  "fields": {
+    "description": "Defesa sem Armadura",
+    "rpgclass": 1
+  }
+},
+{
+  "model": "core.skills",
+  "pk": 25,
+  "fields": {
+    "description": "Fúria",
+    "rpgclass": 1
+  }
+},
+{
+  "model": "core.character",
+  "pk": 1,
+  "fields": {
+    "name": "Liz",
+    "level": 13,
+    "rpgclass": 1,
+    "rpgrace": 13,
+    "img": 1
+  }
+}
+]
