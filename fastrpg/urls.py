@@ -16,7 +16,7 @@ from core.views import (
     rpgclassViewSet,
     rpgraceViewSet,
     skillsViewSet,
-    zcharacterViewSet,
+    characterViewSet,
 )
 from media.router import router as media_router
 
@@ -25,7 +25,7 @@ router.register(r'class', rpgclassViewSet)
 router.register(r'race', rpgraceViewSet)
 router.register(r'itens', itensViewSet)
 router.register(r'skills', skillsViewSet)
-router.register(r'zcharacters', zcharacterViewSet)
+router.register(r'characters', characterViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),

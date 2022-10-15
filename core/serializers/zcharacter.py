@@ -5,7 +5,7 @@ from media.models import Image
 from media.serializers import ImageSerializer
 
 
-class zcharacterSerializer(ModelSerializer):
+class characterSerializer(ModelSerializer):
     img_attachment_key = SlugRelatedField(
         source="img",
         queryset=Image.objects.all(),
