@@ -1,6 +1,8 @@
-from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
+from django.db import models
+
 from core.models import itens
+
 
 class rpgclass(models.Model):
     name = models.CharField(max_length=50)

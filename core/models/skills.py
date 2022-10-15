@@ -1,6 +1,7 @@
 from django.db import models
+
 from core.models import rpgclass
-        
+
 
 class skills(models.Model):
     description = models.CharField(max_length=1000)

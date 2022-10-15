@@ -977,16 +977,5 @@
     "description": "Fúria",
     "rpgclass": 1
   }
-},
-{
-  "model": "core.character",
-  "pk": 1,
-  "fields": {
-    "name": "Liz",
-    "level": 13,
-    "rpgclass": 1,
-    "rpgrace": 13,
-    "img": 1
-  }
 }
 ]
