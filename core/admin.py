@@ -5,6 +5,7 @@ from django.utils.translation import gettext_lazy as _
 from core.models import itens, rpgclass, rpgrace, skills, zcharacter
 from core.models.usuario import Usuario
 
+
 class UsuarioAdmin(UserAdmin):
     fieldsets = (
         (None, {"fields": ("username", "password")}),
